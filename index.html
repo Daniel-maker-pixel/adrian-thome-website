@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Hypnose-Coach und Heilpraktiker für Psychotherapie in Hannover und Göttingen. Rauchen aufhören, Ängste lösen, Stress abbauen – mit Hypnose die wirklich wirkt. Kostenloses Erstgespräch.">
+<meta name="keywords" content="Hypnose Hannover, Hypnose Göttingen, Raucherentwöhnung, Ängste Hypnose, Heilpraktiker Psychotherapie, Hypnose-Coach">
+<meta property="og:title" content="Adrian Thomé – Hypnose-Coach | Hannover &amp; Göttingen">
+<meta property="og:description" content="Endlich frei von dem, was dich aufhält. Hypnose-Coaching mit staatlicher HP-Psy-Zulassung.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<link rel="canonical" href="https://DEINE-DOMAIN.de/">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adrian Thomé – Hypnose-Coach & HP Psychotherapie | Hannover & Göttingen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --forest:      #1a3d2b;
+    --forest-mid:  #2a6044;
+    --forest-soft: #3d8a60;
+    --sage:        #5fa67a;
+    --sage-light:  #85c49e;
+    --mint-pale:   #e8f5ee;
+    --mint-lightest: #f3fbf6;
+    --amber:       #c47a2a;
+    --amber-light: #e09a4a;
+    --amber-pale:  #fdf3e3;
+    --teal-accent: #2a7a6e;
+    --teal-pale:   #e6f4f2;
+    --warm-white:  #fdfcfa;
+    --warm-gray:   #f4f2ee;
+    --border:      #dde8e2;
+    --border-green:#b8d9c6;
+    --text:        #1a2118;
+    --text-soft:   #3a4a3e;
+    --text-muted:  #6a7d70;
+    --sans:        'Nunito', sans-serif;
+    --serif:       'Lora', Georgia, serif;
+    --radius:      8px;
+    --radius-lg:   14px;
+    --shadow-sm:   0 2px 12px rgba(26,61,43,0.08);
+    --shadow-md:   0 6px 28px rgba(26,61,43,0.13);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--warm-white);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.75;
+    overflow-x: hidden;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(253,252,250,0.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .nav-brand {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+
+  .nav-brand-name {
+    font-family: var(--serif);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--forest);
+    line-height: 1.1;
+  }
+
+  .nav-brand-tag {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 0.25rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-soft);
+    text-decoration: none;
+    padding: 0.4rem 0.85rem;
+    border-radius: var(--radius);
+    transition: background 0.18s, color 0.18s;
+  }
+
+  .nav-links a:hover {
+    background: var(--mint-pale);
+    color: var(--forest);
+  }
+
+  .nav-cta {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background: var(--forest-mid);
+    border: none;
+    padding: 0.55rem 1.4rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: background 0.18s, transform 0.12s;
+    white-space: nowrap;
+  }
+
+  .nav-cta:hover { background: var(--forest); transform: translateY(-1px); }
+
+  /* ─── HERO ─── */
+  .hero {
+    background: linear-gradient(145deg, var(--forest) 0%, var(--forest-mid) 55%, var(--forest-soft) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 7rem 2rem 5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Organic leaf/circle shapes in background */
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 600px; height: 600px;
+    border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+    background: rgba(255,255,255,0.04);
+    top: -150px; right: -150px;
+    animation: morphBlob 12s ease-in-out infinite;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    width: 350px; height: 350px;
+    border-radius: 40% 60% 30% 70% / 60% 40% 60% 40%;
+    background: rgba(255,255,255,0.03);
+    bottom: 40px; left: -80px;
+    animation: morphBlob 16s ease-in-out infinite reverse;
+  }
+
+  @keyframes morphBlob {
+    0%, 100% { border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%; }
+    33%       { border-radius: 40% 60% 30% 70% / 60% 30% 70% 40%; }
+    66%       { border-radius: 70% 30% 60% 40% / 30% 70% 30% 70%; }
+  }
+
+  .hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.22);
+    border-radius: 100px;
+    padding: 0.35rem 1rem;
+    font-size: 13px;
+    color: rgba(255,255,255,0.88);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.02em;
+    animation: fadeInUp 0.6s ease 0.1s both;
+  }
+
+  .hero-badge-dot {
+    width: 7px; height: 7px;
+    background: var(--sage-light);
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 0 6px rgba(133,196,158,0.8);
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-weight: 600;
+    line-height: 1.15;
+    color: #fff;
+    margin-bottom: 1.25rem;
+    animation: fadeInUp 0.6s ease 0.2s both;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--sage-light);
+  }
+
+  .hero-sub {
+    font-size: 18px;
+    color: rgba(255,255,255,0.78);
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+    animation: fadeInUp 0.6s ease 0.3s both;
+    max-width: 500px;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    animation: fadeInUp 0.6s ease 0.4s both;
+  }
+
+  .btn-white {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--forest);
+    background: #fff;
+    border: none;
+    padding: 0.85rem 1.75rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.18s, transform 0.12s, box-shadow 0.18s;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  }
+
+  .btn-white:hover {
+    background: var(--mint-pale);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  }
+
+  .btn-outline-white {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.9);
+    background: transparent;
+    border: 1.5px solid rgba(255,255,255,0.35);
+    padding: 0.85rem 1.75rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.18s, border-color 0.18s;
+  }
+
+  .btn-outline-white:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.6);
+  }
+
+  /* Hero cards */
+  .hero-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: fadeInUp 0.7s ease 0.45s both;
+  }
+
+  .hero-card {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    backdrop-filter: blur(8px);
+    transition: background 0.2s;
+  }
+
+  .hero-card:hover { background: rgba(255,255,255,0.16); }
+
+  .hero-card-icon {
+    width: 40px; height: 40px;
+    border-radius: var(--radius);
+    background: rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--sage-light);
+  }
+
+  .hero-card-title {
+    font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 0.2rem;
+  }
+
+  .hero-card-text {
+    font-size: 13px; color: rgba(255,255,255,0.7); line-height: 1.55;
+  }
+
+  /* ─── TRUST BAR ─── */
+  .trust-bar {
+    background: var(--warm-gray);
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem 2rem;
+  }
+
+  .trust-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-soft);
+  }
+
+  .trust-icon {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: var(--mint-pale);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    color: var(--forest-mid);
+  }
+
+  /* ─── SECTIONS ─── */
+  .section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--forest-soft);
+    margin-bottom: 0.75rem;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 600;
+    color: var(--forest);
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-lead {
+    font-size: 17px;
+    color: var(--text-muted);
+    max-width: 580px;
+    margin: 0 auto;
+    line-height: 1.75;
+  }
+
+  /* ─── ERKLÄR-SEKTION ─── */
+  .erklaer-section {
+    background: var(--mint-lightest);
+    border-top: 1px solid var(--border-green);
+    border-bottom: 1px solid var(--border-green);
+  }
+
+  .erklaer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .erklaer-text h2 { text-align: left; }
+
+  .erklaer-text p {
+    font-size: 16px;
+    color: var(--text-soft);
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+  }
+
+  .erklaer-text p strong { color: var(--forest); font-weight: 700; }
+
+  .fact-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .fact-box {
+    background: #fff;
+    border: 1px solid var(--border-green);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .fact-box:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .fact-box-icon {
+    width: 48px; height: 48px;
+    background: var(--mint-pale);
+    border-radius: var(--radius);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1rem;
+    color: var(--forest-mid);
+  }
+
+  .fact-box-title {
+    font-size: 15px; font-weight: 700;
+    color: var(--forest); margin-bottom: 0.4rem;
+  }
+
+  .fact-box-text {
+    font-size: 13px; color: var(--text-muted); line-height: 1.6;
+  }
+
+  /* ─── ANGEBOTE ─── */
+  .angebote-section { background: var(--warm-white); }
+
+  .angebote-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .angebot-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem 1.75rem;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .angebot-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--forest-mid), var(--sage));
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .angebot-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+    border-color: var(--border-green);
+  }
+
+  .angebot-card:hover::before { opacity: 1; }
+
+  .angebot-icon {
+    width: 48px; height: 48px;
+    background: var(--mint-pale);
+    border-radius: var(--radius);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1.25rem;
+    color: var(--forest-mid);
+    flex-shrink: 0;
+  }
+
+  .angebot-title {
+    font-family: var(--serif);
+    font-size: 1.15rem; font-weight: 600;
+    color: var(--forest); margin-bottom: 0.75rem; line-height: 1.3;
+  }
+
+  .angebot-text {
+    font-size: 14px; color: var(--text-muted);
+    line-height: 1.75; margin-bottom: 1.25rem;
+  }
+
+  .angebot-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+  .chip {
+    font-size: 12px; font-weight: 600;
+    color: var(--forest-soft);
+    background: var(--mint-pale);
+    border-radius: 100px;
+    padding: 0.2rem 0.75rem;
+  }
+
+  /* ─── ZIELGRUPPEN ─── */
+  .zielgruppen-section {
+    background: var(--warm-gray);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .zg-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .zg-card {
+    background: #fff;
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .zg-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--forest-mid), var(--sage-light));
+  }
+
+  .zg-icon {
+    width: 56px; height: 56px;
+    background: var(--mint-pale);
+    border-radius: var(--radius-lg);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1rem;
+    color: var(--forest-mid);
+    flex-shrink: 0;
+  }
+
+  .zg-title {
+    font-family: var(--serif);
+    font-size: 1.3rem; font-weight: 600;
+    color: var(--forest); margin-bottom: 0.5rem;
+  }
+
+  .zg-subtitle {
+    font-size: 13px; font-weight: 700;
+    color: var(--forest-soft);
+    letter-spacing: 0.05em; text-transform: uppercase;
+    margin-bottom: 1.25rem;
+  }
+
+  .zg-text {
+    font-size: 15px; color: var(--text-soft);
+    line-height: 1.78; margin-bottom: 1.25rem;
+  }
+
+  .zg-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+
+  .zg-list li {
+    font-size: 14px; color: var(--text-soft);
+    display: flex; gap: 0.6rem;
+    align-items: flex-start; line-height: 1.5;
+  }
+
+  .zg-list li::before {
+    content: '✓';
+    color: var(--forest-soft);
+    font-weight: 700; flex-shrink: 0; margin-top: 0.05em;
+  }
+
+  /* ─── ABLAUF ─── */
+  .ablauf-section { background: var(--warm-white); }
+
+  .ablauf-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+
+  .ablauf-steps::before {
+    content: '';
+    position: absolute;
+    top: 28px; left: 10%; right: 10%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--mint-pale), var(--border-green), var(--mint-pale));
+    z-index: 0;
+  }
+
+  .ablauf-step { text-align: center; position: relative; z-index: 1; }
+
+  .ablauf-num {
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    background: var(--forest-mid);
+    color: #fff;
+    font-size: 18px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 1.25rem;
+    box-shadow: 0 4px 14px rgba(42,96,68,0.35);
+  }
+
+  .ablauf-title {
+    font-size: 15px; font-weight: 700;
+    color: var(--forest); margin-bottom: 0.5rem; line-height: 1.3;
+  }
+
+  .ablauf-text {
+    font-size: 13px; color: var(--text-muted); line-height: 1.65;
+  }
+
+  .disclaimer-box {
+    background: var(--amber-pale);
+    border: 1px solid rgba(196,122,42,0.2);
+    border-left: 4px solid var(--amber);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    font-size: 14px; color: var(--text-soft);
+    line-height: 1.75;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .disclaimer-box strong { color: var(--amber); font-weight: 700; }
+
+  /* ─── ÜBER MICH ─── */
+  .about-section {
+    background: var(--mint-lightest);
+    border-top: 1px solid var(--border-green);
+    border-bottom: 1px solid var(--border-green);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .about-card {
+    background: #fff;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+
+  .about-card-header {
+    background: linear-gradient(135deg, var(--forest), var(--forest-mid));
+    padding: 2.5rem 2rem;
+    text-align: center;
+  }
+
+  .about-avatar {
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    border: 2px solid rgba(255,255,255,0.4);
+    margin: 0 auto 1rem;
+    display: flex; align-items: center; justify-content: center;
+    color: rgba(255,255,255,0.85);
+  }
+
+  .about-card-name {
+    font-family: var(--serif);
+    font-size: 1.3rem; font-weight: 600; color: #fff; margin-bottom: 0.25rem;
+  }
+
+  .about-card-role {
+    font-size: 12px; color: rgba(255,255,255,0.75);
+    font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  }
+
+  .about-card-body { padding: 1.5rem 2rem; }
+
+  .qual-row {
+    display: flex; gap: 0.75rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+    align-items: flex-start;
+  }
+
+  .qual-row:last-child { border-bottom: none; }
+
+  .qual-year {
+    font-size: 12px; font-weight: 700;
+    color: var(--forest-soft);
+    min-width: 2.5rem; padding-top: 0.1em; flex-shrink: 0;
+  }
+
+  .qual-text {
+    font-size: 13px; color: var(--text-soft); line-height: 1.5;
+  }
+
+  .qual-text strong { font-weight: 700; color: var(--text); }
+
+  .about-text-col h2 { text-align: left; }
+
+  .about-text-col h3 {
+    font-family: var(--serif);
+    font-size: 1.2rem; font-weight: 600;
+    color: var(--forest); margin-bottom: 0.5rem; font-style: italic;
+  }
+
+  .about-body {
+    font-size: 16px; color: var(--text-soft); line-height: 1.82;
+  }
+
+  .about-body p { margin-bottom: 1.25rem; }
+  .about-body p:last-child { margin-bottom: 0; }
+  .about-body strong { color: var(--forest); font-weight: 700; }
+
+  .about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  .stat-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .stat-num {
+    font-family: var(--serif);
+    font-size: 2rem; font-weight: 600;
+    color: var(--forest-mid);
+    line-height: 1; margin-bottom: 0.25rem;
+  }
+
+  .stat-label {
+    font-size: 12px; font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 0.05em; line-height: 1.4;
+  }
+
+  /* ─── PREISE ─── */
+  .preis-section { background: var(--warm-white); }
+
+  .preis-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .preis-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+  }
+
+  .preis-card.featured {
+    border-color: var(--forest-mid);
+    border-width: 2px;
+    box-shadow: var(--shadow-md);
+    transform: scale(1.02);
+  }
+
+  .popular-badge {
+    position: absolute;
+    top: -14px; left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px; font-weight: 700;
+    color: #fff;
+    background: var(--forest-mid);
+    border-radius: 100px;
+    padding: 0.3rem 1.1rem;
+    white-space: nowrap; letter-spacing: 0.03em;
+  }
+
+  .preis-icon {
+    width: 52px; height: 52px;
+    background: var(--mint-pale);
+    border-radius: var(--radius-lg);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 1rem;
+    color: var(--forest-mid);
+  }
+
+  .preis-label {
+    font-size: 13px; font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem;
+  }
+
+  .preis-value {
+    font-family: var(--serif);
+    font-size: 2.5rem; font-weight: 600;
+    color: var(--forest); line-height: 1; margin-bottom: 0.25rem;
+  }
+
+  .preis-duration { font-size: 13px; color: var(--text-muted); margin-bottom: 1.5rem; }
+
+  .preis-divider {
+    width: 40px; height: 2px;
+    background: var(--border-green);
+    margin: 0 auto 1.5rem; border-radius: 2px;
+  }
+
+  .preis-desc {
+    font-size: 14px; color: var(--text-soft);
+    line-height: 1.7; text-align: left; margin-bottom: 1.25rem;
+  }
+
+  .preis-list {
+    list-style: none; text-align: left;
+    display: flex; flex-direction: column; gap: 0.5rem;
+  }
+
+  .preis-list li {
+    font-size: 13px; color: var(--text-soft);
+    display: flex; gap: 0.5rem;
+    align-items: flex-start; line-height: 1.5;
+  }
+
+  .preis-list li::before {
+    content: '✓';
+    color: var(--forest-soft); font-weight: 700; flex-shrink: 0;
+  }
+
+  .preis-note {
+    text-align: center; font-size: 14px;
+    color: var(--text-muted); max-width: 620px;
+    margin: 0 auto; line-height: 1.75;
+  }
+
+  /* ─── STANDORTE ─── */
+  .standorte-section {
+    background: var(--warm-gray);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .standorte-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .standort-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .standort-header {
+    display: flex; align-items: center;
+    gap: 1rem; margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .standort-marker {
+    width: 48px; height: 48px;
+    border-radius: var(--radius);
+    background: var(--mint-pale);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    color: var(--forest-mid);
+  }
+
+  .standort-city {
+    font-family: var(--serif);
+    font-size: 1.4rem; font-weight: 600;
+    color: var(--forest); line-height: 1.1;
+  }
+
+  .standort-area {
+    font-size: 13px; color: var(--text-muted);
+    font-weight: 600; letter-spacing: 0.03em;
+  }
+
+  .standort-rows { display: flex; flex-direction: column; gap: 0.75rem; }
+
+  .standort-row {
+    display: flex; gap: 0.75rem;
+    font-size: 14px; align-items: baseline;
+  }
+
+  .standort-key {
+    font-size: 12px; font-weight: 700;
+    color: var(--forest-soft);
+    text-transform: uppercase; letter-spacing: 0.06em;
+    min-width: 4.5rem; flex-shrink: 0;
+  }
+
+  .standort-val { color: var(--text-soft); line-height: 1.55; }
+
+  /* Online-Banner */
+  .online-card {
+    background: linear-gradient(135deg, var(--forest), var(--forest-mid));
+    border-radius: var(--radius-lg);
+    padding: 2.25rem 2.5rem;
+    display: flex; align-items: center;
+    justify-content: space-between;
+    gap: 2rem; flex-wrap: wrap;
+    box-shadow: var(--shadow-md);
+  }
+
+  .online-card-title {
+    font-family: var(--serif);
+    font-size: 1.25rem; font-weight: 600;
+    color: #fff; margin-bottom: 0.4rem;
+  }
+
+  .online-card-text {
+    font-size: 14px; color: rgba(255,255,255,0.75);
+    line-height: 1.6; max-width: 480px;
+  }
+
+  /* ─── KONTAKT ─── */
+  .kontakt-section { background: var(--warm-white); }
+
+  .kontakt-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 4rem; align-items: start;
+  }
+
+  .kontakt-form-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .form-title {
+    font-family: var(--serif);
+    font-size: 1.4rem; font-weight: 600;
+    color: var(--forest); margin-bottom: 0.4rem;
+  }
+
+  .form-subtitle {
+    font-size: 14px; color: var(--text-muted);
+    margin-bottom: 1.75rem; line-height: 1.6;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .form-group {
+    display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem;
+  }
+
+  .form-label {
+    font-size: 13px; font-weight: 700; color: var(--text-soft);
+  }
+
+  .form-input, .form-select, .form-textarea {
+    background: var(--warm-gray);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-family: var(--sans); font-size: 15px;
+    padding: 0.7rem 1rem;
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+    width: 100%; appearance: none;
+  }
+
+  .form-input:focus, .form-select:focus, .form-textarea:focus {
+    border-color: var(--forest-soft);
+    background: #fff;
+  }
+
+  .form-input::placeholder, .form-textarea::placeholder { color: var(--text-muted); }
+  .form-textarea { resize: vertical; min-height: 100px; }
+
+  .btn-green {
+    font-size: 15px; font-weight: 700;
+    color: #fff; background: var(--forest-mid);
+    border: none; border-radius: var(--radius);
+    padding: 0.9rem 2rem;
+    cursor: pointer; width: 100%;
+    transition: background 0.18s, transform 0.12s;
+    margin-top: 0.5rem;
+  }
+
+  .btn-green:hover { background: var(--forest); transform: translateY(-1px); }
+
+  .kontakt-aside {
+    display: flex; flex-direction: column; gap: 1.5rem;
+  }
+
+  .contact-info-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .ci-row {
+    display: flex; gap: 1rem;
+    align-items: flex-start;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .ci-row:last-child { border-bottom: none; }
+
+  .ci-icon {
+    width: 38px; height: 38px;
+    border-radius: var(--radius);
+    background: var(--mint-pale);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    color: var(--forest-mid);
+  }
+
+  .ci-label {
+    font-size: 11px; font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.2rem;
+  }
+
+  .ci-val { font-size: 14px; color: var(--text-soft); line-height: 1.5; }
+  .ci-val a { color: var(--forest-mid); text-decoration: none; font-weight: 600; }
+  .ci-val a:hover { color: var(--forest); text-decoration: underline; }
+
+  .notice-card {
+    background: var(--amber-pale);
+    border: 1px solid rgba(196,122,42,0.2);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem 1.75rem;
+    font-size: 14px; color: var(--text-soft); line-height: 1.75;
+  }
+
+  .notice-card strong { color: var(--amber); font-weight: 700; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--forest);
+    color: rgba(255,255,255,0.8);
+    padding: 2.5rem 2rem;
+  }
+
+  .footer-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: flex; align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; gap: 1.25rem;
+  }
+
+  .footer-brand {
+    font-family: var(--serif);
+    font-size: 16px; color: #fff; font-style: italic;
+  }
+
+  .footer-brand span {
+    display: block; font-family: var(--sans);
+    font-size: 12px; font-style: normal;
+    color: rgba(255,255,255,0.55);
+    font-weight: 600; letter-spacing: 0.05em; margin-top: 0.15rem;
+  }
+
+  .footer-links { display: flex; gap: 1.75rem; }
+
+  .footer-links a {
+    font-size: 13px; color: rgba(255,255,255,0.6);
+    text-decoration: none; font-weight: 600;
+    transition: color 0.18s;
+  }
+
+  .footer-links a:hover { color: #fff; }
+
+  .footer-loc {
+    font-size: 13px; color: rgba(255,255,255,0.55);
+    display: flex; align-items: center; gap: 0.4rem;
+  }
+
+  /* ─── ANIMATIONS ─── */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 960px) {
+    .nav-links { display: none; }
+    nav { padding: 0 1.25rem; }
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-cards { display: none; }
+    .section-inner { padding: 4rem 1.25rem; }
+    .erklaer-grid, .angebote-grid, .zg-grid,
+    .ablauf-steps, .about-grid, .preis-grid,
+    .standorte-grid, .kontakt-grid { grid-template-columns: 1fr; }
+    .preis-card.featured { transform: none; }
+    .form-row { grid-template-columns: 1fr; }
+    .ablauf-steps::before { display: none; }
+    footer .footer-inner { flex-direction: column; text-align: center; }
+    .about-stats { grid-template-columns: repeat(3, 1fr); }
+    .online-card { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-brand">
+    <span class="nav-brand-name">Adrian Thomé</span>
+    <span class="nav-brand-tag">Hypnose · Coaching · Hannover &amp; Göttingen</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#wie-funktioniert">Wie funktioniert das?</a></li>
+    <li><a href="#angebote">Themen</a></li>
+    <li><a href="#about">Über mich</a></li>
+    <li><a href="#preise">Preise</a></li>
+    <li><a href="#standorte">Praxen</a></li>
+  </ul>
+  <a href="KAJABI_BUCHUNG_URL" class="nav-cta">Jetzt anfragen</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        Staatlich zugelassen · HP Psychotherapie
+      </div>
+      <h1>Endlich frei von dem,<br>was dich <em>aufhält.</em></h1>
+      <p class="hero-sub">
+        Hypnose hilft, wo Willenskraft allein nicht reicht.
+        Ob Rauchen aufhören, Stress abbauen oder innere Blockaden lösen —
+        ich begleite dich in Hannover, Göttingen oder online.
+      </p>
+      <div class="hero-actions">
+        <a href="KAJABI_BUCHUNG_URL" class="btn-white">Kostenloses Erstgespräch</a>
+        <a href="#wie-funktioniert" class="btn-outline-white">Wie funktioniert Hypnose?</a>
+      </div>
+    </div>
+    <div class="hero-cards">
+      <div class="hero-card">
+        <div class="hero-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 12h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h8"/><path d="M18 8c0-2.5-2-2.5-2-5"/><path d="M21 8c0-2.5-2-2.5-2-5"/></svg></div>
+        <div>
+          <div class="hero-card-title">Mit dem Rauchen aufhören</div>
+          <div class="hero-card-text">Viele schaffen es in 1–3 Sitzungen — ohne Willenskraft allein.</div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <div>
+          <div class="hero-card-title">Ängste &amp; Stress loswerden</div>
+          <div class="hero-card-text">Prüfungsangst, Lampenfieber, Nervosität — da kann Hypnose wirklich helfen.</div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <div>
+          <div class="hero-card-title">Leistung verbessern</div>
+          <div class="hero-card-text">Blockaden abbauen, Fokus stärken — für Beruf, Sport oder Alltag.</div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
+        <div>
+          <div class="hero-card-title">Mehr Ruhe &amp; Energie</div>
+          <div class="hero-card-text">Grübeln und innere Unruhe haben oft tiefere Ursachen als Schlafhygiene.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <div class="trust-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 3.2L18 4l.8 3.8 3.2 1.6-1.6 3.2L22 16l-3.8.8L16.4 20 12 18.4 7.6 20l-1.8-3.2L2 16l1.6-3.4L2 9.4l3.2-1.6L6 4l3.6 1.2z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+      HP Psy – staatlich anerkannt
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+      System23 zertifiziert
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="18"/><rect x="14" y="9" width="7" height="12"/><path d="M3 21h18"/><path d="M6 6h.01"/><path d="M6 10h.01"/><path d="M6 14h.01"/><path d="M6 18h.01"/><path d="M17 12h.01"/><path d="M17 16h.01"/><path d="M17 20h.01"/></svg></div>
+      2 Praxisstandorte in Niedersachsen
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+      Auch online verfügbar
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="13" y2="14"/></svg></div>
+      Kostenloses Erstgespräch
+    </div>
+  </div>
+</div>
+
+<!-- WIE FUNKTIONIERT HYPNOSE -->
+<section id="wie-funktioniert" class="erklaer-section">
+  <div class="section-inner">
+    <div class="erklaer-grid">
+      <div class="erklaer-text">
+        <div class="eyebrow">Keine Magie — echte Wissenschaft</div>
+        <h2>Was passiert eigentlich<br>in der Hypnose?</h2>
+        <p>Hypnose ist kein Schlaf und kein Kontrollverlust. Du bleibst die ganze Zeit wach und weißt, was passiert. Es ist eher so wie ein <strong>Zustand tiefer Entspannung und Fokus</strong> — ähnlich wie wenn du ein gutes Buch liest und die Zeit vergisst.</p>
+        <p>In diesem Zustand wird das Gehirn zugänglicher für Veränderungen. Die Schutzmechanismen, die sonst neue Gewohnheiten blockieren, fahren einen Gang zurück. Genau dort können wir ansetzen — <strong>direkt an den Ursachen, nicht nur an den Symptomen.</strong></p>
+        <p>Wissenschaftliche Studien (u.a. der Stanford University) bestätigen: Hypnose wirkt messbar bei Ängsten, Stress und der Veränderung von Gewohnheiten.</p>
+      </div>
+      <div class="fact-boxes">
+        <div class="fact-box">
+          <div class="fact-box-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg></div>
+          <div class="fact-box-title">Du behältst die Kontrolle</div>
+          <p class="fact-box-text">Niemand kann dich in Hypnose zu etwas zwingen, was du nicht willst. Du kannst jederzeit herauskommen.</p>
+        </div>
+        <div class="fact-box">
+          <div class="fact-box-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+          <div class="fact-box-title">Schneller als Reden allein</div>
+          <p class="fact-box-text">Hypnose erreicht das, worüber Probleme entstehen — Gefühle und Gewohnheiten — direkt. Nicht nur darüber reden.</p>
+        </div>
+        <div class="fact-box">
+          <div class="fact-box-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <div class="fact-box-title">Wirkt bei vielen Themen</div>
+          <p class="fact-box-text">Rauchen, Ängste, Schlaf, Stress, Selbstvertrauen — Hypnose hat ein breites Anwendungsfeld mit guten Erfolgsquoten.</p>
+        </div>
+        <div class="fact-box">
+          <div class="fact-box-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-4.49"/></svg></div>
+          <div class="fact-box-title">Keine jahrelange Therapie</div>
+          <p class="fact-box-text">Bei den meisten Themen zeigen sich nach 2–5 Sitzungen spürbare Veränderungen. Oft geht es schneller als man denkt.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANGEBOTE -->
+<section id="angebote" class="angebote-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">Womit ich helfen kann</div>
+      <h2>Dein Thema ist hier richtig.</h2>
+      <p class="section-lead">Ob du seit Jahren rauchst, unter Druck leidest oder einfach weißt, dass da mehr in dir steckt — Hypnose bietet für viele konkrete Probleme einen echten Weg raus.</p>
+    </div>
+    <div class="angebote-grid">
+      <div class="angebot-card">
+        <div class="angebot-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 12h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h8"/><path d="M18 8c0-2.5-2-2.5-2-5"/><path d="M21 8c0-2.5-2-2.5-2-5"/></svg></div>
+        <div class="angebot-title">Mit dem Rauchen aufhören</div>
+        <p class="angebot-text">Nicht Willenskraft, sondern Umprogrammierung. Wir gehen direkt an die Gewohnheit und das Verlangen — mit der bewährten System23-Methode nach Alexander Hartmann.</p>
+        <div class="angebot-tags">
+          <span class="chip">System23</span>
+          <span class="chip">Sucht</span>
+          <span class="chip">Gewohnheit</span>
+        </div>
+      </div>
+      <div class="angebot-card">
+        <div class="angebot-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <div class="angebot-title">Ängste &amp; Phobien</div>
+        <p class="angebot-text">Prüfungsangst, Lampenfieber, Flugangst, soziale Ängste — Hypnose geht an die emotionale Wurzel der Angst. Nicht weg reden, sondern wirklich auflösen.</p>
+        <div class="angebot-tags">
+          <span class="chip">Prüfungsangst</span>
+          <span class="chip">Soziale Angst</span>
+          <span class="chip">Phobien</span>
+        </div>
+      </div>
+      <div class="angebot-card">
+        <div class="angebot-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"/><line x1="23" y1="13" x2="23" y2="11"/><polyline points="11 6 7 12 13 12 9 18"/></svg></div>
+        <div class="angebot-title">Stress &amp; Burnout-Prävention</div>
+        <p class="angebot-text">Wer dauerhaft unter Strom steht, kennt irgendwann nur noch diesen Zustand. Hypnose hilft, das Nervensystem neu zu kalibrieren — echte Erholung statt Durchhalten.</p>
+        <div class="angebot-tags">
+          <span class="chip">Burnout</span>
+          <span class="chip">Stress</span>
+          <span class="chip">Energie</span>
+        </div>
+      </div>
+      <div class="angebot-card">
+        <div class="angebot-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+        <div class="angebot-title">Selbstvertrauen &amp; Blockaden</div>
+        <p class="angebot-text">Du weißt, was du willst — aber irgendwas hält dich zurück. Alte Glaubenssätze sitzen tief. In der Hypnose können wir sie aufspüren und verändern.</p>
+        <div class="angebot-tags">
+          <span class="chip">Selbstwert</span>
+          <span class="chip">Blockaden</span>
+          <span class="chip">Klarheit</span>
+        </div>
+      </div>
+      <div class="angebot-card">
+        <div class="angebot-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <div class="angebot-title">Leistung &amp; Fokus verbessern</div>
+        <p class="angebot-text">Für alle, die mehr aus sich herausholen wollen — im Beruf, im Sport, im Alltag. Hypnose stärkt den Fokus und baut ab, was zwischen dir und deiner Leistung steht.</p>
+        <div class="angebot-tags">
+          <span class="chip">Performance</span>
+          <span class="chip">Fokus</span>
+          <span class="chip">Motivation</span>
+        </div>
+      </div>
+      <div class="angebot-card">
+        <div class="angebot-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/><line x1="18" y1="2" x2="18" y2="5"/><line x1="18" y1="5" x2="21" y2="5"/><line x1="20" y1="3" x2="16" y2="7"/></svg></div>
+        <div class="angebot-title">Schlaf &amp; innere Ruhe</div>
+        <p class="angebot-text">Grübeln, Unruhe, schlechter Schlaf — oft stecken Glaubenssätze dahinter, die wir längst vergessen haben. Wir schauen gemeinsam rein und schaffen Erleichterung.</p>
+        <div class="angebot-tags">
+          <span class="chip">Schlaf</span>
+          <span class="chip">Grübeln</span>
+          <span class="chip">Innere Ruhe</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ZIELGRUPPEN -->
+<section class="zielgruppen-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">Für wen ist das?</div>
+      <h2>Hypnose ist für alle —<br>nicht nur für "die anderen".</h2>
+      <p class="section-lead">Egal ob du handwerklich arbeitest oder im Büro — ob du gerade steckengeblieben bist oder einfach mehr willst. Hypnose macht keinen Unterschied.</p>
+    </div>
+    <div class="zg-grid">
+      <div class="zg-card">
+        <div class="zg-icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <div class="zg-subtitle">Konkrete Probleme lösen</div>
+        <div class="zg-title">Du willst etwas Bestimmtes ändern</div>
+        <p class="zg-text">Kein Schnickschnack, kein Geschwätz. Du hast ein konkretes Ziel und willst wissen, ob Hypnose dabei hilft. Die Antwort: sehr wahrscheinlich ja.</p>
+        <ul class="zg-list">
+          <li>Mit dem Rauchen aufhören — endlich</li>
+          <li>Weniger Stress, besser schlafen</li>
+          <li>Ruhiger bleiben in schwierigen Situationen</li>
+          <li>Aufhören, sich selbst im Weg zu stehen</li>
+        </ul>
+      </div>
+      <div class="zg-card">
+        <div class="zg-icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+        <div class="zg-subtitle">Mehr aus sich herausholen</div>
+        <div class="zg-title">Du willst dein Potenzial ausschöpfen</div>
+        <p class="zg-text">Du funktionierst gut — aber du weißt, dass da mehr ist. Blockaden, alte Muster, ungenutzte Kraft. Hypnose gibt Zugang zu dem, was dich eigentlich antreibt.</p>
+        <ul class="zg-list">
+          <li>Mentale Blockaden erkennen und auflösen</li>
+          <li>Fokus, Klarheit und Entscheidungskraft stärken</li>
+          <li>Selbstsabotage beenden</li>
+          <li>Auf einem anderen Level ankommen</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABLAUF -->
+<section id="ablauf" class="ablauf-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">So läuft es ab</div>
+      <h2>Was dich bei mir erwartet.</h2>
+      <p class="section-lead">Kein Rätselraten. Hier siehst du genau, wie eine Sitzung bei mir aussieht — von Anfang bis Ende.</p>
+    </div>
+    <div class="ablauf-steps">
+      <div class="ablauf-step">
+        <div class="ablauf-num">1</div>
+        <div class="ablauf-title">Kostenloses Erstgespräch</div>
+        <p class="ablauf-text">Wir reden ca. 20 Minuten — du schilderst dein Anliegen, ich erkläre meinen Ansatz. Kein Druck, keine Verpflichtung.</p>
+      </div>
+      <div class="ablauf-step">
+        <div class="ablauf-num">2</div>
+        <div class="ablauf-title">Anamnese &amp; Vorbereitung</div>
+        <p class="ablauf-text">In der ersten Sitzung schauen wir uns an, was dich bewegt — und was du konkret verändern willst. Keine Standardprogramme.</p>
+      </div>
+      <div class="ablauf-step">
+        <div class="ablauf-num">3</div>
+        <div class="ablauf-title">Die eigentliche Hypnose</div>
+        <p class="ablauf-text">Entspannung, Fokus, gezielte Arbeit am Thema. Du bist die ganze Zeit bei dir — kein Blackout, kein Kontrollverlust.</p>
+      </div>
+      <div class="ablauf-step">
+        <div class="ablauf-num">4</div>
+        <div class="ablauf-title">Nachgespräch &amp; nächste Schritte</div>
+        <p class="ablauf-text">Wir sprechen kurz über das Erlebte. Und du entscheidest, ob und wie du weitermachen möchtest.</p>
+      </div>
+    </div>
+    <div class="disclaimer-box">
+      <strong>Wichtiger Hinweis:</strong> Ich arbeite im Coaching- und Heilpraktiker-Rahmen (HP Psychotherapie). Bei schweren psychischen Erkrankungen gehört die Begleitung in psychiatrische Fachbehandlung. Wenn ich merke, dass das der Fall ist, sage ich es offen und vermittle weiter.
+    </div>
+  </div>
+</section>
+
+<!-- ÜBER MICH -->
+<section id="about" class="about-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">Wer steckt dahinter?</div>
+      <h2>Ich bin Adrian Thomé.</h2>
+      <p class="section-lead">Kein esoterischer Guru, kein Seminar-Verkäufer. Ich bin ausgebildeter Hypnose-Coach und staatlich zugelassener Heilpraktiker für Psychotherapie.</p>
+    </div>
+    <div class="about-grid">
+      <div>
+        <div class="about-card">
+          <div class="about-card-header">
+            <div class="about-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+            <div class="about-card-name">Adrian Thomé</div>
+            <div class="about-card-role">HP Psy · Hypnose-Coach</div>
+          </div>
+          <div class="about-card-body">
+            <div class="qual-row">
+              <div class="qual-year">2026</div>
+              <div class="qual-text"><strong>Zertifizierter Hypnose-Coach</strong><br>System23 · Alexander Hartmann</div>
+            </div>
+            <div class="qual-row">
+              <div class="qual-year">2025</div>
+              <div class="qual-text"><strong>Bioresonanztherapeut</strong><br>nach Paul Schmidt (PSAL)</div>
+            </div>
+            <div class="qual-row">
+              <div class="qual-year">2024</div>
+              <div class="qual-text"><strong>HP Psychotherapie</strong><br>Staatliche Erlaubnis · Göttingen</div>
+            </div>
+            <div class="qual-row">
+              <div class="qual-year">2024</div>
+              <div class="qual-text"><strong>Fachfortbildungen Hypnose</strong><br>Ängste · Depression/Burnout (Paracelsus)</div>
+            </div>
+            <div class="qual-row">
+              <div class="qual-year">2024</div>
+              <div class="qual-text"><strong>Gesprächstherapie nach Carl Rogers</strong><br>Likamundi Heilpraktikerschule</div>
+            </div>
+            <div class="qual-row">
+              <div class="qual-year">1999</div>
+              <div class="qual-text"><strong>Magister Artium</strong><br>Philosophie · Universität zu Köln</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-num">40+</div>
+            <div class="stat-label">Sitzungen</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">2</div>
+            <div class="stat-label">Praxis­standorte</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">HP</div>
+            <div class="stat-label">Staatlich zugelassen</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-text-col">
+        <h3>Warum ich das mache.</h3>
+        <div class="about-body">
+          <p>Ich bin 1964 geboren, habe in Köln Philosophie studiert und bin erst spät zur Hypnose gekommen — nicht durch Zufall, sondern weil mich eine Frage nicht losgelassen hat: <strong>Warum scheitern so viele Menschen an Veränderungen, obwohl sie es wirklich wollen?</strong></p>
+          <p>Die Antwort, die ich gefunden habe: Weil wir versuchen, mit dem Verstand zu lösen, was im Unbewussten sitzt. Gewohnheiten, Ängste, Glaubenssätze — die entstehen nicht im Kopf, sie sitzen tiefer. Genau dort setzt Hypnose an.</p>
+          <p>Ich habe mich breit ausgebildet — bei Paracelsus, bei Alexander Hartmann (System23), und ich bin staatlich zugelassener Heilpraktiker für Psychotherapie. Kein Wochenendkurs, sondern echte Ausbildung mit echter Prüfung.</p>
+          <p>In meiner Praxis in Hannover-Isernhagen und der Gemeinschaftspraxis La Vida in Göttingen habe ich bisher über 40 Sitzungen begleitet. <strong>Was mich antreibt: dass Veränderung wirklich möglich ist</strong> — auch wenn man das selbst nicht mehr glaubt.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PREISE -->
+<section id="preise" class="preis-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">Was es kostet</div>
+      <h2>Klare Preise, keine Überraschungen.</h2>
+      <p class="section-lead">Keine Pakete, die du kaufen musst. Keine Mindestlaufzeiten. Du entscheidest, wie viele Sitzungen du brauchst.</p>
+    </div>
+    <div class="preis-grid">
+      <div class="preis-card">
+        <div class="preis-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <div class="preis-label">Erstgespräch</div>
+        <div class="preis-value">0 €</div>
+        <div class="preis-duration">Ca. 20 Minuten · Telefon oder Video</div>
+        <div class="preis-divider"></div>
+        <p class="preis-desc">Wir klären, ob und wie ich dir helfen kann — völlig unverbindlich. Du musst danach nichts buchen.</p>
+        <ul class="preis-list">
+          <li>Du schilderst dein Anliegen</li>
+          <li>Ich erkläre meine Arbeitsweise</li>
+          <li>Kein Druck, keine Verpflichtung</li>
+        </ul>
+      </div>
+      <div class="preis-card featured">
+        <div class="popular-badge">⭐ Am häufigsten gebucht</div>
+        <div class="preis-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg></div>
+        <div class="preis-label">Einzelsitzung</div>
+        <div class="preis-value">130 €</div>
+        <div class="preis-duration">Ca. 90 Minuten · inkl. Vor- &amp; Nachgespräch</div>
+        <div class="preis-divider"></div>
+        <p class="preis-desc">Eine vollständige Hypnosesitzung. Für ein konkretes Thema oder als Einstieg in eine tiefere Arbeit.</p>
+        <ul class="preis-list">
+          <li>Anamnese oder direkter Einstieg</li>
+          <li>Zahlung bar, PayPal oder Überweisung</li>
+          <li>Quittung / Rechnung selbstverständlich</li>
+        </ul>
+      </div>
+      <div class="preis-card">
+        <div class="preis-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-4.49"/></svg></div>
+        <div class="preis-label">Folgesitzungen</div>
+        <div class="preis-value">130 €</div>
+        <div class="preis-duration">Je Sitzung · ca. 90 Minuten</div>
+        <div class="preis-divider"></div>
+        <p class="preis-desc">Weitere Sitzungen zum selben Preis. Die meisten Themen klären sich in 2–5 Sitzungen.</p>
+        <ul class="preis-list">
+          <li>Kein Abo, keine Mindestanzahl</li>
+          <li>Auch online möglich</li>
+          <li>Hausbesuche auf Anfrage</li>
+          <li>Sozialrabatt möglich — einfach fragen</li>
+        </ul>
+      </div>
+    </div>
+    <p class="preis-note">Gesetzliche Krankenkassen bezahlen Hypnose in der Regel nicht. Manche privaten Zusatzversicherungen übernehmen Heilpraktiker-Leistungen — das lohnt sich nachzufragen.</p>
+  </div>
+</section>
+
+<!-- STANDORTE -->
+<section id="standorte" class="standorte-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">Wo ich bin</div>
+      <h2>Hannover, Göttingen — oder online.</h2>
+      <p class="section-lead">Zwei Praxen in Niedersachsen und alle Sitzungen auch per Video möglich. Du wählst, was für dich passt.</p>
+    </div>
+    <div class="standorte-grid">
+      <div class="standort-card">
+        <div class="standort-header">
+          <div class="standort-marker"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <div class="standort-city">Hannover</div>
+            <div class="standort-area">Region Isernhagen</div>
+          </div>
+        </div>
+        <div class="standort-rows">
+          <div class="standort-row">
+            <span class="standort-key">Ort</span>
+            <span class="standort-val">Hannover-Isernhagen, gut erreichbar aus dem gesamten Großraum Hannover</span>
+          </div>
+          <div class="standort-row">
+            <span class="standort-key">Termine</span>
+            <span class="standort-val">Nach Vereinbarung</span>
+          </div>
+        </div>
+      </div>
+      <div class="standort-card">
+        <div class="standort-header">
+          <div class="standort-marker"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <div class="standort-city">Göttingen</div>
+            <div class="standort-area">Gemeinschaftspraxis La Vida</div>
+          </div>
+        </div>
+        <div class="standort-rows">
+          <div class="standort-row">
+            <span class="standort-key">Adresse</span>
+            <span class="standort-val">Geismar Landstraße 19c · 37083 Göttingen</span>
+          </div>
+          <div class="standort-row">
+            <span class="standort-key">Lage</span>
+            <span class="standort-val">Ruhig, barrierefrei, mit Garten und altem Baumbestand</span>
+          </div>
+          <div class="standort-row">
+            <span class="standort-key">Kollege</span>
+            <span class="standort-val">Praxis geteilt mit HP Niels Voges (Hypnosetherapeut)</span>
+          </div>
+          <div class="standort-row">
+            <span class="standort-key">Termine</span>
+            <span class="standort-val">Nach Vereinbarung</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="online-card">
+      <div>
+        <div class="online-card-title" style="display:flex;align-items:center;gap:0.6rem;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--sage-light)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg> Lieber von zu Hause?</div>
+        <p class="online-card-text">Alle Sitzungen sind auch per Video möglich. Hypnose funktioniert online genauso gut — du brauchst nur einen ruhigen Raum und eine stabile Internetverbindung.</p>
+      </div>
+      <a href="KAJABI_BUCHUNG_URL" class="btn-white">Online-Termin anfragen</a>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt" class="kontakt-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">Kontakt aufnehmen</div>
+      <h2>Stell einfach an.<br>Völlig unverbindlich.</h2>
+      <p class="section-lead">Das kostenlose Erstgespräch dauert ca. 20 Minuten. Kein Druck, keine Verpflichtung. Ich melde mich in der Regel am selben oder nächsten Tag.</p>
+    </div>
+    <div class="kontakt-grid">
+      <div class="kontakt-form-card">
+        <div class="form-title">Kurze Anfrage schicken</div>
+        <div class="form-subtitle">Ich melde mich zeitnah bei dir — meist am selben Tag.</div>
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Dein Name</label>
+              <input type="text" class="form-input" placeholder="Vorname Nachname" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Telefon oder E-Mail</label>
+              <input type="text" class="form-input" placeholder="Wie erreiche ich dich?" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Worum geht es?</label>
+            <select class="form-select">
+              <option value="">Bitte auswählen …</option>
+              <option>Rauchen aufhören</option>
+              <option>Ängste / Phobien</option>
+              <option>Stress / Burnout</option>
+              <option>Selbstvertrauen / Blockaden</option>
+              <option>Leistung / Fokus verbessern</option>
+              <option>Schlaf / innere Unruhe</option>
+              <option>Etwas anderes</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Gewünschter Ort</label>
+            <select class="form-select">
+              <option value="">Bitte auswählen …</option>
+              <option>Hannover-Isernhagen</option>
+              <option>Göttingen (Praxis La Vida)</option>
+              <option>Online / Video</option>
+              <option>Hausbesuch (auf Anfrage)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Noch etwas? (Optional)</label>
+            <textarea class="form-textarea" placeholder="Was ich noch wissen sollte …"></textarea>
+          </div>
+          <button type="submit" class="btn-green">Jetzt kostenlos anfragen →</button>
+        </form>
+      </div>
+      <div class="kontakt-aside">
+        <div class="contact-info-card">
+          <div class="ci-row">
+            <div class="ci-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div>
+              <div class="ci-label">Anruf</div>
+              <div class="ci-val"><a href="tel:DEINE_TELEFONNUMMER">DEINE_TELEFONNUMMER</a><br><span style="font-size:12px;color:var(--text-muted);">Ich rufe gerne zurück.</span></div>
+            </div>
+          </div>
+          <div class="ci-row">
+            <div class="ci-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div>
+              <div class="ci-label">E-Mail</div>
+              <div class="ci-val"><a href="mailto:kontakt@adrian-thome.de">kontakt@adrian-thome.de</a></div>
+            </div>
+          </div>
+          <div class="ci-row">
+            <div class="ci-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div>
+              <div class="ci-label">Reaktionszeit</div>
+              <div class="ci-val">In der Regel am selben Tag — spätestens am nächsten Werktag.</div>
+            </div>
+          </div>
+          <div class="ci-row">
+            <div class="ci-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h12"/><path d="M4 14h9"/><path d="M19 6a7.7 7.7 0 0 0-5.2-2A7.9 7.9 0 0 0 6 12c0 4.4 3.5 8 7.8 8 2 0 3.8-.8 5.2-2"/></svg></div>
+            <div>
+              <div class="ci-label">Erstgespräch</div>
+              <div class="ci-val">Kostenlos · ca. 20 Minuten · kein Druck</div>
+            </div>
+          </div>
+        </div>
+        <div class="notice-card">
+          <strong>Ehrlich gesagt:</strong> Nicht jedes Anliegen ist ein Fall für Hypnose — und nicht jeder Mensch ist mit mir als Begleitung gut aufgestellt. Das Erstgespräch dient genau dazu, das herauszufinden. Wenn ich nicht die richtige Adresse bin, sage ich das — und helfe dir, die richtige zu finden.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      Adrian Thomé
+      <span>Heilpraktiker für Psychotherapie · Hypnose-Coach</span>
+    </div>
+    <div class="footer-links">
+      <a href="/impressum.html">Impressum</a>
+      <a href="/datenschutz.html">Datenschutz</a>
+    </div>
+    <div class="footer-loc"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Hannover · Göttingen · Online</div>
+  </div>
+</footer>
+
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('.btn-green');
+  btn.textContent = '✓ Nachricht angekommen – ich melde mich bald!';
+  btn.style.background = 'var(--teal-accent)';
+  setTimeout(() => {
+    btn.textContent = 'Jetzt kostenlos anfragen →';
+    btn.style.background = '';
+    e.target.reset();
+  }, 4000);
+}
+</script>
+</body>
+</html>
